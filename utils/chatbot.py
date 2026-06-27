@@ -1,4 +1,6 @@
+```python
 import json
+from pathlib import Path
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -10,110 +12,57 @@ class TravelFAQChatbot:
 
     def __init__(self):
 
-        # Load FAQ data
-        from pathlib import Path
-
+        # Load FAQ JSON
         BASE_DIR = Path(__file__).resolve().parent.parent
-
         FAQ_FILE = BASE_DIR / "faq.json"
 
         with open(FAQ_FILE, "r", encoding="utf-8") as file:
-
-            self.faqs = json.load(file)
             self.faqs = json.load(file)
 
         # Prepare corpus
         self.corpus = []
 
         for faq in self.faqs:
-
             text = faq["question"] + " " + " ".join(faq["keywords"])
-
             self.corpus.append(preprocess(text))
 
-        # TF-IDF
+        # TF-IDF Vectorizer
         self.vectorizer = TfidfVectorizer()
 
         self.faq_vectors = self.vectorizer.fit_transform(self.corpus)
 
     def get_response(self, user_question):
 
-        # Greeting Handling
-        greetings = [
-            "hi",
-            "hello",
-            "hey",
-            "good morning",
-            "good afternoon",
-            "good evening"
-        ]
-
-        if user_question.lower().strip() in greetings:
-
-            return {
-                "reply":
-                """👋 Hello! Welcome to the Travel FAQ Chatbot.
-
-I can help you with:
-
-✈ Flight Booking
-
-🏨 Hotel Booking
-
-🛄 Baggage
-
-📄 Travel Documents
-
-🎫 Ticket Cancellation
-
-💳 Payments
-
-How can I help you today?""",
-
-                "matched_question": "Greeting",
-
-                "similarity": 100
-            }
-
-        # NLP Preprocessing
         cleaned_question = preprocess(user_question)
 
-        # Convert to TF-IDF
         user_vector = self.vectorizer.transform([cleaned_question])
 
-        # Cosine Similarity
         similarity_scores = cosine_similarity(
             user_vector,
             self.faq_vectors
         )
 
-        # Best Match
         best_index = similarity_scores.argmax()
 
         best_score = similarity_scores[0][best_index]
 
-        # Threshold
+        # Similarity Threshold
         if best_score < 0.35:
 
             return {
-                "reply":
-                """Sorry, I couldn't understand your question.
+                "reply": """Sorry, I couldn't find a suitable answer.
 
-Please ask questions related to:
+Please ask travel-related questions such as:
 
-• Flights
+✈️ Flight Booking
+🏨 Hotel Booking
+🛄 Baggage
+📄 Passport & Visa
+🎫 Ticket Cancellation
+💳 Payments
+🌍 Holiday Packages""",
 
-• Hotels
-
-• Baggage
-
-• Travel Documents
-
-• Payments
-
-• Holiday Packages""",
-
-                "matched_question": None,
+                "matched_question": "No Match",
 
                 "similarity": round(best_score * 100, 2)
             }
@@ -131,5 +80,5 @@ Please ask questions related to:
         }
 
 
-# Create chatbot object
 chatbot = TravelFAQChatbot()
+

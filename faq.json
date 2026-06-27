@@ -1,16 +1,15 @@
-[
-    {
+[{
   "id": 0,
   "question": "Hi",
   "keywords": ["hi", "hii", "hiii", "hello", "hey", "heyy", "greetings"],
   "answer": "👋 Hello! Welcome to the Travel FAQ Chatbot. I'm your virtual travel assistant. I can help you with flight bookings, hotel reservations, baggage information, travel documents, cancellations, refunds, travel insurance, and holiday packages. How can I assist you today?"
-},
-{
+    },
+    {
   "id": -1,
   "question": "Thank you",
   "keywords": ["thanks", "thank you", "thankyou", "thx"],
   "answer": "You're welcome! 😊 I'm happy to help. If you have any more travel-related questions, feel free to ask. Have a safe journey! ✈️"
-},
+    },
 {
   "id": -2,
   "question": "Bye",
