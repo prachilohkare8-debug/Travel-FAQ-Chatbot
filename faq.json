@@ -1,0 +1,321 @@
+[
+    {
+  "id": 0,
+  "question": "Hi",
+  "keywords": ["hi", "hii", "hiii", "hello", "hey", "heyy", "greetings"],
+  "answer": "👋 Hello! Welcome to the Travel FAQ Chatbot. I'm your virtual travel assistant. I can help you with flight bookings, hotel reservations, baggage information, travel documents, cancellations, refunds, travel insurance, and holiday packages. How can I assist you today?"
+},
+{
+  "id": -1,
+  "question": "Thank you",
+  "keywords": ["thanks", "thank you", "thankyou", "thx"],
+  "answer": "You're welcome! 😊 I'm happy to help. If you have any more travel-related questions, feel free to ask. Have a safe journey! ✈️"
+},
+{
+  "id": -2,
+  "question": "Bye",
+  "keywords": ["bye", "goodbye", "see you", "exit", "quit"],
+  "answer": "👋 Thank you for using the Travel FAQ Chatbot. Have a wonderful trip and travel safely! We hope to assist you again soon."
+},
+  {
+    "id": 1,
+    "question": "How can I book a flight?",
+    "keywords": ["flight", "book", "ticket", "airline"],
+    "answer": "You can book a flight through our website or mobile app by selecting your destination, travel dates, and preferred flight."
+  },
+  {
+    "id": 2,
+    "question": "How can I cancel my flight ticket?",
+    "keywords": ["cancel", "flight", "refund"],
+    "answer": "Go to the 'My Bookings' section, select your booking, and choose the Cancel option."
+  },
+  {
+    "id": 3,
+    "question": "Can I reschedule my flight?",
+    "keywords": ["reschedule", "change", "flight"],
+    "answer": "Yes. You can reschedule your flight from the Manage Booking section, subject to airline policies."
+  },
+  {
+    "id": 4,
+    "question": "What documents are required for domestic travel?",
+    "keywords": ["documents", "domestic", "id"],
+    "answer": "A valid government-issued photo ID such as Aadhaar Card, Passport, or Driving License is required."
+  },
+  {
+    "id": 5,
+    "question": "What documents are required for international travel?",
+    "keywords": ["passport", "visa", "international"],
+    "answer": "You need a valid passport, visa (if applicable), and any additional documents required by the destination country."
+  },
+  {
+    "id": 6,
+    "question": "How much baggage is allowed?",
+    "keywords": ["baggage", "luggage", "weight"],
+    "answer": "Baggage allowance depends on your airline and ticket type. Please check your booking details."
+  },
+  {
+    "id": 7,
+    "question": "Can I carry food on a flight?",
+    "keywords": ["food", "snacks", "flight"],
+    "answer": "Yes, packaged food is generally allowed, but airline policies may vary."
+  },
+  {
+    "id": 8,
+    "question": "How early should I arrive at the airport?",
+    "keywords": ["airport", "arrival", "check-in"],
+    "answer": "Arrive at least 2 hours before domestic flights and 3 hours before international flights."
+  },
+  {
+    "id": 9,
+    "question": "Can I check my flight status?",
+    "keywords": ["status", "flight", "delay"],
+    "answer": "Yes. You can check your flight status using the Flight Status section on the website."
+  },
+  {
+    "id": 10,
+    "question": "How do I book a hotel?",
+    "keywords": ["hotel", "booking", "stay"],
+    "answer": "Search your destination, choose your preferred hotel, and complete the booking online."
+  },
+  {
+    "id": 11,
+    "question": "Can I cancel my hotel booking?",
+    "keywords": ["hotel", "cancel", "refund"],
+    "answer": "Yes, depending on the hotel's cancellation policy."
+  },
+  {
+    "id": 12,
+    "question": "How can I contact customer support?",
+    "keywords": ["support", "contact", "help"],
+    "answer": "You can contact customer support via phone, email, or live chat available on our website."
+  },
+  {
+    "id": 13,
+    "question": "Do you provide travel insurance?",
+    "keywords": ["insurance", "travel"],
+    "answer": "Yes, travel insurance can be added during the booking process."
+  },
+  {
+    "id": 14,
+    "question": "Can I book holiday packages?",
+    "keywords": ["package", "holiday", "tour"],
+    "answer": "Yes, we offer domestic and international holiday packages."
+  },
+  {
+    "id": 15,
+    "question": "What payment methods are accepted?",
+    "keywords": ["payment", "upi", "card"],
+    "answer": "We accept UPI, credit cards, debit cards, net banking, and wallets."
+  },
+  {
+    "id": 16,
+    "question": "How can I download my ticket?",
+    "keywords": ["ticket", "download", "pdf"],
+    "answer": "You can download your ticket from the My Bookings section after logging in."
+  },
+  {
+    "id": 17,
+    "question": "Do you offer student discounts?",
+    "keywords": ["student", "discount"],
+    "answer": "Student discounts are available on selected airlines and travel packages."
+  },
+  {
+    "id": 18,
+    "question": "Can I book a one-way ticket?",
+    "keywords": ["one-way", "ticket"],
+    "answer": "Yes, one-way as well as round-trip bookings are available."
+  },
+  {
+    "id": 19,
+    "question": "What should I do if my flight is delayed?",
+    "keywords": ["delay", "flight"],
+    "answer": "You will receive updates via SMS and email. You can also check the latest flight status online."
+  },
+  {
+    "id": 20,
+    "question": "How do I change my travel date?",
+    "keywords": ["change", "date", "booking"],
+    "answer": "Go to Manage Booking, choose your reservation, and update your travel date if permitted."
+  }
+  ,
+{
+  "id": 21,
+  "question": "How can I check in online?",
+  "keywords": ["check in", "online", "boarding pass"],
+  "answer": "You can check in online through the airline's website or mobile app 24 to 48 hours before departure."
+},
+{
+  "id": 22,
+  "question": "What should I do if I lose my baggage?",
+  "keywords": ["lost baggage", "luggage", "missing bag"],
+  "answer": "Report the issue immediately at the airline's baggage service desk and keep your baggage claim receipt for tracking."
+},
+{
+  "id": 23,
+  "question": "Can I get a refund for a cancelled flight?",
+  "keywords": ["refund", "cancelled flight", "money back"],
+  "answer": "Refund eligibility depends on the airline's cancellation policy and the type of ticket purchased."
+},
+{
+  "id": 24,
+  "question": "How can I choose my seat?",
+  "keywords": ["seat", "window", "aisle"],
+  "answer": "You can select your preferred seat during booking or later from the Manage Booking section."
+},
+{
+  "id": 25,
+  "question": "Do I need travel insurance?",
+  "keywords": ["insurance", "travel protection"],
+  "answer": "Travel insurance is optional but recommended for medical emergencies, cancellations, and baggage loss."
+},
+{
+  "id": 26,
+  "question": "How do I modify my hotel reservation?",
+  "keywords": ["hotel", "modify", "reservation"],
+  "answer": "Visit the My Bookings section to modify your hotel reservation if allowed by the hotel's policy."
+},
+{
+  "id": 27,
+  "question": "Can I book airport transfers?",
+  "keywords": ["airport transfer", "cab", "taxi"],
+  "answer": "Yes, airport transfer services can be booked while making your travel reservation."
+},
+{
+  "id": 28,
+  "question": "Are meals included during the flight?",
+  "keywords": ["meal", "food", "flight"],
+  "answer": "Meal availability depends on the airline and ticket type."
+},
+{
+  "id": 29,
+  "question": "How can I update passenger details?",
+  "keywords": ["passenger", "details", "edit"],
+  "answer": "Passenger details can be updated from Manage Booking, subject to airline policies."
+},
+{
+  "id": 30,
+  "question": "Can I travel with my pet?",
+  "keywords": ["pet", "animal", "travel"],
+  "answer": "Pet travel depends on the airline's pet policy. Please check the airline guidelines before booking."
+},
+{
+  "id": 31,
+  "question": "What is the check-in baggage limit?",
+  "keywords": ["check-in baggage", "weight", "luggage"],
+  "answer": "The baggage limit varies by airline and ticket class. Refer to your booking details."
+},
+{
+  "id": 32,
+  "question": "Can I carry medicines on the flight?",
+  "keywords": ["medicine", "medical", "flight"],
+  "answer": "Yes, essential medicines are allowed. Carry prescriptions for restricted medications."
+},
+{
+  "id": 33,
+  "question": "How can I view my booking history?",
+  "keywords": ["booking history", "previous booking"],
+  "answer": "Log in to your account and visit the Booking History section."
+},
+{
+  "id": 34,
+  "question": "What happens if I miss my flight?",
+  "keywords": ["miss flight", "late"],
+  "answer": "Contact the airline immediately. Rebooking options depend on the airline's policy."
+},
+{
+  "id": 35,
+  "question": "Can I book flights for someone else?",
+  "keywords": ["book for others", "passenger"],
+  "answer": "Yes, you can book tickets for another passenger using their personal details."
+},
+{
+  "id": 36,
+  "question": "Do children need a separate ticket?",
+  "keywords": ["child", "kids", "infant"],
+  "answer": "Ticket requirements depend on the child's age and airline policy."
+},
+{
+  "id": 37,
+  "question": "How can I contact the airline directly?",
+  "keywords": ["airline", "contact", "support"],
+  "answer": "You can contact the airline through its official customer support number or website."
+},
+{
+  "id": 38,
+  "question": "Can I use reward points for booking?",
+  "keywords": ["reward", "points", "loyalty"],
+  "answer": "Yes, eligible reward points can be redeemed during booking."
+},
+{
+  "id": 39,
+  "question": "How do I know if my booking is confirmed?",
+  "keywords": ["booking", "confirmed", "confirmation"],
+  "answer": "You will receive a confirmation email and SMS after successful payment."
+},
+{
+  "id": 40,
+  "question": "Can I change my destination after booking?",
+  "keywords": ["destination", "change"],
+  "answer": "Changing the destination depends on airline policies and applicable fare differences."
+},
+{
+  "id": 41,
+  "question": "How can I apply a promo code?",
+  "keywords": ["promo", "coupon", "discount"],
+  "answer": "Enter the promo code during checkout before completing your payment."
+},
+{
+  "id": 42,
+  "question": "Is Wi-Fi available on flights?",
+  "keywords": ["wifi", "internet", "flight"],
+  "answer": "Some airlines provide onboard Wi-Fi. Availability depends on the airline and aircraft."
+},
+{
+  "id": 43,
+  "question": "Can I upgrade my flight ticket?",
+  "keywords": ["upgrade", "business class", "premium"],
+  "answer": "Yes, upgrades are available depending on seat availability and airline policy."
+},
+{
+  "id": 44,
+  "question": "What payment options are available?",
+  "keywords": ["payment", "credit card", "upi"],
+  "answer": "We accept UPI, debit cards, credit cards, wallets, and net banking."
+},
+{
+  "id": 45,
+  "question": "How long does a refund take?",
+  "keywords": ["refund", "processing"],
+  "answer": "Refunds are generally processed within 5 to 10 business days."
+},
+{
+  "id": 46,
+  "question": "Can I print my boarding pass at the airport?",
+  "keywords": ["boarding pass", "airport"],
+  "answer": "Yes, boarding passes can be printed at the airline's check-in counter or kiosk."
+},
+{
+  "id": 47,
+  "question": "Do I need a visa for every international trip?",
+  "keywords": ["visa", "international"],
+  "answer": "Visa requirements depend on your nationality and destination country."
+},
+{
+  "id": 48,
+  "question": "How can I subscribe to travel offers?",
+  "keywords": ["offers", "newsletter", "deals"],
+  "answer": "Subscribe to our newsletter to receive the latest travel deals and offers."
+},
+{
+  "id": 49,
+  "question": "Can I book multi-city trips?",
+  "keywords": ["multi city", "multiple destinations"],
+  "answer": "Yes, you can book multi-city itineraries through the flight search page."
+},
+{
+  "id": 50,
+  "question": "Is customer support available 24 hours?",
+  "keywords": ["24x7", "support", "customer service"],
+  "answer": "Yes, our customer support team is available 24 hours a day, 7 days a week."
+}
+]

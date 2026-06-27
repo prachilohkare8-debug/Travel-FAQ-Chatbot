@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Travel FAQ Chatbot</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <!-- Header -->
+
+    <div class="chat-header">
+
+        <div class="logo">
+
+            ✈️
+
+        </div>
+
+        <div>
+
+            <h2>Travel FAQ Assistant</h2>
+
+            <p>Powered by NLP • TF-IDF • Cosine Similarity</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Welcome Section -->
+
+    <div class="welcome-section">
+
+        <h3>Hello 👋</h3>
+
+        <p>
+            I'm your Travel Assistant.
+            Ask me anything related to travel.
+        </p>
+
+        <div class="suggestions">
+
+            <button onclick="fillQuestion('How can I book a flight?')">
+                ✈ Book Flight
+            </button>
+
+            <button onclick="fillQuestion('How much baggage is allowed?')">
+                🛄 Baggage
+            </button>
+
+            <button onclick="fillQuestion('How can I cancel my ticket?')">
+                🎫 Cancellation
+            </button>
+
+            <button onclick="fillQuestion('What documents are required for international travel?')">
+                📄 Passport / Visa
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Chat Area -->
+
+    <div id="chat-box" class="chat-box">
+
+    </div>
+
+
+    <!-- Input -->
+
+    <div class="chat-input">
+
+        <input
+
+            type="text"
+
+            id="message"
+
+            placeholder="Ask your travel question..."
+
+            autocomplete="off"
+
+        >
+
+        <button id="send-btn">
+
+            Send
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
