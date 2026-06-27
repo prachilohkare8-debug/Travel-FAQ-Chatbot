@@ -1,4 +1,4 @@
-```python
+
 import json
 from pathlib import Path
 
@@ -16,8 +16,17 @@ class TravelFAQChatbot:
         BASE_DIR = Path(__file__).resolve().parent.parent
         FAQ_FILE = BASE_DIR / "faq.json"
 
+        print("FAQ FILE:", FAQ_FILE)
+        print("EXISTS:", FAQ_FILE.exists())
+        print("SIZE:", FAQ_FILE.stat().st_size)
+
         with open(FAQ_FILE, "r", encoding="utf-8") as file:
-            self.faqs = json.load(file)
+            content = file.read()
+
+        print("FIRST 100 CHARS:")
+        print(repr(content[:100]))
+
+        self.faqs = json.loads(content)
 
         # Prepare corpus
         self.corpus = []
